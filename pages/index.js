@@ -18,11 +18,20 @@ const MainPage = (props) => {
   <div>
   <Head>
      <title>{props.shows.headline}</title>
-   </Head>
-   <Header/>
-   </div>
+     <meta property="og:image" content={props.shows.bannerImage}/>
+  </Head>
+  <Header/>
+  </div>
   :
-  <HeaderMobile />;
+  <div>
+  <Head>
+     <title>{props.shows.headline}</title>
+     <meta property="og:image" content={props.shows.bannerImage}/>
+  </Head>
+  <HeaderMobile />
+  </div>
+
+  ;
 };
 
 // without it NEXT will optimze the app and do a static page rendering
@@ -31,7 +40,7 @@ const MainPage = (props) => {
 // };
 
 MainPage.getInitialProps = async function () {
-    const res = await fetch('https://api.americanmuslimtoday.net/amt-news/api/v1/news/c72473b6-64fd-40fb-ba1b-d65838bc5168');
+    const res = await fetch('https://api.americanmuslimtoday.net/amt-news/api/v1/news/427de6c4-8842-441b-9906-9de112711510');
     const data = await res.json();
     return {
         shows: data
