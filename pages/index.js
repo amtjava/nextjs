@@ -3,8 +3,9 @@ import { useMediaQuery, Context } from "react-responsive";
 import Header from "./Header";
 import HeaderMobile from "./HeaderMobile";
 import fetch from 'isomorphic-unfetch';
-
 import Head from 'next/head';
+import "./index.scss";
+import { Button } from 'antd';
 const isServer = typeof window === "undefined";
 
 const MainPage = (props) => {
@@ -21,6 +22,7 @@ const MainPage = (props) => {
      <meta property="og:image" content={props.shows.bannerImage}/>
   </Head>
   <Header/>
+  <Button> aaa   </Button>
   </div>
   :
   <div>
