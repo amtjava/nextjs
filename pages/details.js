@@ -1,4 +1,5 @@
 import React from "react";
+import {useRouter, withRouter} from 'next/router';
 import { useMediaQuery, Context } from "react-responsive";
 import Header from "./Header";
 import HeaderMobile from "./HeaderMobile";
@@ -12,7 +13,11 @@ const MainPage = (props) => {
   const isTabletOrDesktop = useMediaQuery({ minWidth: 768 });
   const device = React.useContext(Context);
   console.log(props.shows.headline);
-  //console.log(props.id,props);
+  const router = useRouter();
+  const { id } = router.query;
+  console.log(id)
+  console.log(props.id)
+
   console.log(isServer ? "SERVER" : "BROWSER", "context:", device);
 
   return isTabletOrDesktop ?
@@ -41,13 +46,16 @@ const MainPage = (props) => {
 //   return { props: {} };
 // };
 
-MainPage.getInitialProps = async function () {
+MainPage.getInitialProps = async function (ctx) {
+    console.log(result)
+    console.log("result")
+    console.log(result.query.id)
     const res = await fetch('https://api.americanmuslimtoday.net/amt-news/api/v1/news/427de6c4-8842-441b-9906-9de112711510');
     const data = await res.json();
     return {
         shows: data,
-      //  id: ctx.query,
+        id: ctx.query.id,
     }
 }
 
-export default MainPage;
+export default withRouter(MainPage);
