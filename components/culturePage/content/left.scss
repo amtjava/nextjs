@@ -1,0 +1,31 @@
+.other-left-module {
+    width: 100%;
+    height: max-content;
+
+    .module-title {
+        width: 100%;
+        height: max-content;
+        padding: 5px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+ 
+       // align-content: space-between;
+        
+        margin: 0 auto !important;
+        width: calc(100% - 22px) !important;
+        //background-image: linear-gradient(#FFFFFF, #D8D8D8);
+        // background: -webkit-gradient(linear, 0% 20%, 0% 1000%, from(#0769c3), to(#065fd4), color-stop(0.1, #03000a));
+        background-color: #09102c;
+       // border-radius: 4px;
+     
+
+        .title-text {
+            font-size: 16px;
+            font-weight: 700;
+            color: #f5eaea;
+        }
+    }
+
+
+}

@@ -1,0 +1,47 @@
+.menuList {
+    width: 100%;
+
+    .menuListSwiper {
+        height: 180px;
+        padding: 0 15px;
+
+        .swiper-slide {
+            padding-bottom: 20px;
+        }
+
+        .menublock {
+            float: left;
+            width: 25%;
+            height: 50%;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 35px;height: 35px;
+                margin-bottom: 5px;
+            }
+
+            .menutitle {
+                font: 14px '微软雅黑';
+            }
+        }
+
+        .swiper-pagination {
+            bottom: 5px;
+        }
+    }
+
+    .adverSwiper {
+        width: 100%;
+        height: 140px;
+        margin: 10px 0 15px 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+}

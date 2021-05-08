@@ -1,0 +1,9 @@
+.am-tabs-tab-bar-wrap {
+  //  padding: 0 15px;
+}
+
+.am-tabs-default-bar-top .am-tabs-default-bar-tab {
+    &::after {
+       height: 0px!important;
+    }
+}

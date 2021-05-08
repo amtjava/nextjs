@@ -1,0 +1,13 @@
+.left-news-module{
+    padding: 0 10px;
+    margin-bottom: 20px;
+
+    .card-link {
+        margin-bottom: 10px;
+        margin-left: 0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

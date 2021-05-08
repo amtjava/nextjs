@@ -1,0 +1,84 @@
+.headercontroller {
+    width: 100%;
+    position: fixed;
+    top:0;left:0;
+    //background: -webkit-gradient(linear, 0% 20%, 0% 1000%, from(#0769c3), to(#065fd4), color-stop(0.1, #03000a));
+    background: #09102c;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+    z-index: 99;
+    
+    .headerbox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border-top: 2px solid #920d0d;
+        padding-top: 3px;
+    //    padding: 0 15px;
+        padding-left: 6%;
+
+        .logo {
+            display: flex;
+            width: auto;
+            height: 53px;
+            align-items: center;
+
+            img {
+                //width: auto;
+              //  height: 100%;
+              width: 280px;
+            //  box-shadow: 3px 3px 10px 1px rgba(27,127,204,.8);
+            }
+        }
+
+        .loginmodule {
+            width: 440px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dropdownModule {
+          //  padding-left: 18px;
+            display: flex;
+            justify-content: space-around;
+
+            .dropdownBtn {
+          //      margin-right: 10px;
+                font-size: 14px;
+                padding: 5px 7px;
+              //  border: 1px solid #ffffff;
+            //    border-radius: 3px;
+                transition: all .3s ease;
+                -webkit-transition: all .3s ease;
+          //      background-color: -webkit-gradient(linear, 0% 20%, 0% 1000%, from(#0769c3), to(#065fd4), color-stop(0.1, #03000a));;   //  #e6f7ff
+
+                color: white;
+                &:hover {
+                    border-color: #920d0d;
+                    color: #920d0d;
+                    background-color: rgba(0, 0, 0, 0.65) ;
+
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                    
+                }
+            }
+
+        }
+
+    }
+}
+.subMenu{
+  &:hover {
+     // border-color: #5EA7FD;
+    //  color: blue;
+      background-color: #920d0d;
+      a{
+          color: #ffffff;
+      }
+  }
+}

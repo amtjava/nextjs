@@ -1,0 +1,24 @@
+//
+// .logo-content .shrink{
+// height: 48px;
+// width: 260px;
+// }
+
+.logo-img{
+  height: 94px;
+  width: 400px;
+//  transition-delay: 0.2s;
+  transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+-webkit-transition: all 0.6s ease-in-out;
+-o-transition: all 0.6s ease-in-out;
+}
+.small-title{
+  transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+-webkit-transition: all 0.6s ease-in-out;
+-o-transition: all 0.6s ease-in-out;
+}
+.small-title .shrink{
+display: none;
+}

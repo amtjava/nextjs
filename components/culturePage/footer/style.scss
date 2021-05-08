@@ -1,0 +1,91 @@
+.footer {
+    width: 100%;
+    height: max-content;
+   // background-color: #0255A3;
+    background-color: #09102c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    z-index: 10;
+    // .new-modal{
+    //     background-color: lightgreen;
+    // }
+
+    .footer-row {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        .policy-module{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-right: 60px;
+            border-right: white solid 1px;  
+            .info-list-module{
+              display: flex;
+              flex-direction: column;
+              margin-right: 20px;
+               
+              a {
+                  text-align: left;
+                  color: #c5c5c5;
+                  font-size: 16px !important;
+                  margin-bottom: 10px;
+                  &:hover {
+                    text-decoration: underline;
+                    color: rgba(229, 255, 0, 0.89);
+                   }
+                }             
+            }
+        }
+
+        .introduce-module {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            //margin-right: 80px;
+            margin-right: 30px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .big-title {
+               // font-size: 16px;
+                font-size: 18px;
+                margin-bottom: 10px;
+                color: white;
+                &:hover {
+                    //color: rgba(255, 123, 0, 0.911);
+                    color: rgb(255, 230, 0);
+                    font-weight: bold;
+                }
+            }
+
+            .text-list-module {
+                display: flex;
+                flex-direction: column;
+                margin-right: 15px;
+        
+                a {
+                    text-align: left;
+                    color: #c5c5c5;
+                    //font-size: 14px;
+                    font-size: 15px;
+                    margin-bottom: 10px;
+
+                    &:hover {
+                        text-decoration: underline;
+                        color: rgba(229, 255, 0, 0.89);
+                    }
+                }
+            }
+        }
+    }
+
+    .page-footer-text {
+        font-size: 14px;
+        color: white;
+    }
+}

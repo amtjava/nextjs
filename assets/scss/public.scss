@@ -1,0 +1,78 @@
+// z这个public是专门给classified用的
+.doctors-details {
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    padding: 30px;
+    margin-top: 155px;
+
+}
+
+.details-list-title {
+    font-size: 27px;
+    border-bottom: 1px solid #b5b5b5;
+  //  margin-bottom: 30px;
+    padding-bottom: 10px;
+    font-weight: 700;
+
+    img {
+        margin-right: 50px;
+
+    }
+
+    h1 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 20px;
+        color: #fe5f01;
+        margin-bottom: 8px;
+    }
+
+    p {
+        color: #373737;
+        font-size: 16px;
+        margin-bottom: 21px;
+    }
+}
+
+.marqee-height {
+    height: 590px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.marqee-height2 {
+    height: 395px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.repead-row {
+    display: flex;
+    width: 100%;
+    height: 165px;
+    margin-bottom: 17px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    cursor: auto;
+}
+
+footer {
+    border-top: 1px solid #e0e0e0;
+    padding: 50px 0;
+    background-color: white;
+
+    .text-center {
+        text-align: center;
+
+        .copytext {
+            margin: 0;
+            color: #484848;
+        }
+    }
+}

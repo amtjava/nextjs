@@ -1,0 +1,162 @@
+.left-module {
+    width: 100%;
+    height: max-content;
+
+.module-title-box{
+    width: 100%;
+    height: 40px;
+    border-bottom: 4px solid #09102c;
+    margin-bottom: 10px;
+    .module-title {
+       // width: 100%;
+       // height: max-content;
+        width: fit-content;
+        height: 40px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 10px;
+        border: 2px solid #232540;
+
+        .icon {
+            width: 25px;
+            height: 25px;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+            margin-right: 8px;
+        }
+
+        .title-text {
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+}
+
+    .news-module {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .news-block {
+            width: 100%;
+            height: max-content;
+
+
+
+
+            .toLink {
+                display: inline-flex;
+                flex-direction: column;
+                align-items: flex-start;
+            //    padding: 12px;
+                overflow: hidden;
+        //        border-radius: 4px;
+                background-color: rgba(0,0,0,0.5);
+                box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+                margin-bottom: 10px;
+
+
+                .row-article {
+                    width: 100%;
+                    height: 100px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .img-comp {
+                        width: 40%;
+
+                        .img-show {
+                            width: 100%;
+                          //  height: 112px;
+                        //    border-radius: 5px;
+                            background-color: #cfcfcf;
+                            overflow: hidden;
+                            background-size: cover;
+                            background-position: center;
+
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+
+                    .art-comp {
+                        width: 58%;
+                        padding-left: 5px;
+                        display: flex;
+                        flex-direction: column;
+
+                        .art-title {
+                            word-wrap: break-word;
+                            font: 14px   Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            color: #27393E;
+                            margin-bottom: 10px;
+                            font-weight: 600;
+                        }
+
+                        .art-content {
+                            word-wrap: break-word;
+                            font: 12px   Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            color: #7393A0;
+                        }
+                    }
+                }
+
+                .art-time {
+                    width: 100%;
+                    padding: 5px 0;
+                    text-align: right;
+                    font: 12px   Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                    color: #7393A0;
+                }
+
+
+            }
+
+
+            .big-imgShow {
+                width:100%;
+                height: max-content;
+                text-align: center;
+                margin-top: 5px;
+                overflow: hidden;
+                background-color: white;
+                box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+                margin-bottom: 15px;
+                text-align: center;
+
+                img {
+
+                    height: 190px;
+
+                }
+            }
+        }
+
+        .adver {
+            box-shadow: none;
+        //    border-radius: 3px;
+            border:1px solid white;
+
+            .toLink {
+                display: block;
+                height: max-content;
+                padding: 0px;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+.animated {
+    opacity: 0;
+}

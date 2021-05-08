@@ -1,0 +1,71 @@
+/*!*
+ *  https://github.com/xjh22222228/React-CNode
+ */
+@charset "utf-8";
+
+@import "media.scss";
+
+@mixin keyframes($name){
+    @keyframes #{$name} {
+        @content;
+    }
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+}
+
+
+@mixin prefix($name,$value){
+    #{$name}:$value;
+    -webkit-#{$name}:$value;
+}
+
+
+@mixin display($value) {
+    display: #{$value};
+    display:-webkit-#{$value};
+}
+
+
+// 居中 $x = 水平， $y = 垂直
+// 居中对齐，不填任何参数  @include center;
+@mixin center($x: center, $y: center, $xx: center, $yy: center) {
+    @include display(flex);
+    @include display(box);
+    justify-content: $x;             /* flex-start */
+    align-items: $y;
+    @include prefix(box-pack, $xx);  /*    start   */
+    @include prefix(box-align, $yy);
+}
+
+
+@mixin user-select() {
+    @include prefix(user-select, none);
+}
+
+@mixin flexBetween() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexEndCenter(){
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@mixin flexCenterCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin fontStyle($size, $color) {
+    font-size: $size;
+    font-family: '微软雅黑';
+    color: $color;
+}
+
+//页面模块宽度
+$pageWidth: 1200px;

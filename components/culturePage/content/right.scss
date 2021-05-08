@@ -1,0 +1,38 @@
+.right-module {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .adver-module {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        background-color: #eeeeee;
+        margin-bottom: 15px;
+
+        .adver-link {
+            display: inline-block;
+            width: 100%;
+            height: 130px;
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .adver {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

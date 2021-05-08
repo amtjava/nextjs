@@ -1,0 +1,159 @@
+@function px2rem($px) {
+    $rem : 37.5px;
+    @return ($px / $rem) + rem;
+}
+
+.r-item-content {
+    display: flex;
+    padding-top: px2rem(15px);
+    padding-bottom: px2rem(15px);
+    margin-left: px2rem(10px);
+    margin-right: px2rem(10px);
+    color: #656565;
+    background-color:white;
+    border-radius:px2rem(8px);
+    box-shadow: 0px 6px 15px 0px rgba(91, 145, 232, 0.12);
+    margin-bottom: px2rem(15px);
+    padding-right: px2rem(2px);
+    &:after {
+        background-color: #e4e4e4;
+    }
+    .img-block{
+      padding-top: px2rem(9px);
+
+
+      .item-img {
+          width: px2rem(110px);
+          height: px2rem(75px);
+          border: 1px solid #e4e4e4;
+      }
+
+    }
+
+    .item-info-content {
+        flex: 1;
+        margin-left: px2rem(10px);
+        overflow: hidden;
+    }
+    .brand {
+        position: absolute;
+        left: px2rem(1px);
+        top: px2rem(16px);
+        font-size: px2rem(12px);
+        padding: px2rem(2px);
+        color: #fff;
+    }
+    .brand-pin {
+        background-color: #ffa627;
+    }
+    .brand-xin {
+        background-color: #21c56c;
+    }
+    .item-firstline{
+      overflow: hidden;
+      zoom:1;
+
+    .item-title {
+        margin-top: px2rem(3px);
+        font-size: px2rem(16px);
+        font-weight: 700;
+        color: #333;
+        float: left;
+    }
+    .star{
+        float: right;
+        font-size: 16px;
+    }
+        }
+    .item-desc {
+        margin-top: px2rem(13px);
+        font-size: px2rem(13px);
+    }
+
+    .item-score {
+        float: left;
+      // font-size: px2rem(13px);
+        font-weight: 600;
+    }
+    .item-count {
+        float: left;
+        margin-left: px2rem(5px);
+    }
+    .item-time {
+        float: right;
+        padding-right: px2rem(2px);
+    }
+    .item-distance {
+        float: right;
+    }
+    .item-price {
+        margin-top: px2rem(10px);
+        font-size: px2rem(12px);
+        height: px2rem(24px);
+    }
+    .item-meituan-flag {
+        float: right;
+        background-color: #ffd161;
+        color: #000;
+        padding: px2rem(3px);
+        border-radius: px2rem(3px);
+    }
+    .other-info {
+        color: #898989;
+        margin-top: px2rem(7px);
+        font-size: px2rem(12px);
+        display: flex;
+    }
+    .other-tag {
+        width: px2rem(14px);
+        height: px2rem(14px);
+    }
+    .other-content {
+        vertical-align: px2rem(3px);
+        margin-left: px2rem(3px);
+        height: px2rem(14px);
+        width: px2rem(230px);
+    }
+    .item-pre-price {
+        float: left;
+    }
+
+}
+ .classified-link .pay-style {
+   color: white !important;
+   background: -webkit-gradient(linear, 0% 20%, 0% 1000%, from(#0769c3), to(#065fd4), color-stop(0.1, #03000a)) !important;
+   .link-object {
+       color: white !important;
+       font-size: !important;
+   }
+   p {
+     color: white !important;
+   }
+   h5{
+     color: white !important;
+     width: max-content;
+//     border: 1.5px #212529 solid;
+//     background: #212529;
+   }
+   &:hover {
+       transform: scale(1.04);
+       cursor: pointer;
+       .active {
+             transform: scale(1.16);
+             position: relative;
+             font-family: "Times New Roman", Times, serif;
+           //  font-size: 17px;
+             font-weight: 900;
+              background: -webkit-gradient(linear, 0% 20%, 0% 1000%, from(#2a69a2), to(#091b31), color-stop(0.1, #000000)) !important;
+             //color: #1b1b1b;
+             //font-weight: 1000;
+             color:  #000000;
+             z-index: 999;
+             //margin-left: 20px;
+
+             box-shadow: 0px 3px 10px 1px rgba(59, 58, 58, 0.774);
+
+       }
+   }
+
+}

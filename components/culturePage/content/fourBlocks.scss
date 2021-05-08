@@ -1,0 +1,20 @@
+
+ .swiper-center-module{
+        .swiper-slide {
+            text-align: center;
+            padding: 10px 0px 0 0px;
+
+            /deep/ .ant-col {
+                padding: 0 5px;
+                margin-bottom: 10px;
+            }
+        }
+
+        // .swiper-button-prev {
+        //     left: -24px;
+        // }
+        //
+        // .swiper-button-next {
+        //     right: -24px;
+        // }
+}
