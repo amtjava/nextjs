@@ -51,7 +51,7 @@ import 'froala-editor/css/froala_style.min.css';
 import 'froala-editor/css/froala_editor.pkgd.min.css';
 const isServer = typeof window === "undefined";
 
-const MainPage = (props) => {
+const DetailPage = (props) => {
   const {
     history,
     newsItem,
@@ -72,7 +72,7 @@ const MainPage = (props) => {
 
   const text = newsItem == undefined?"":newsItem.description;
 
-  const url = 'https://americanmuslimtoday.com/details/'+ id;
+  const url = 'http://americanmuslimtoday.net:3000/details/'+ id;
 
   return (
   <div>
@@ -80,17 +80,9 @@ const MainPage = (props) => {
      <title>{props.newsItem.headline}</title>
      <meta property="og:image" content={props.newsItem.bannerImage}/>
   </Head>
-  <Header/>
 
   <div className="detail-page-wrapper" >
-  <Row>
-  <MediaQuery query='(max-device-width:1224px)'>
-   <Header></Header>
-  </MediaQuery>
-  <MediaQuery query='(min-device-width:1224px)'>
-   <MenuNav></MenuNav>
-  </MediaQuery>
-  </Row>
+
 
     <Row>
       <Col xs={0} sm={0} md={0} lg={0} xl={2} xxl={2}> </Col>
@@ -235,18 +227,7 @@ const MainPage = (props) => {
 
     </Row>
 
-    <Row>
-    <MediaQuery query='(min-device-width:1224px)'>
-        <FooterMobile />
-    </MediaQuery>
-    <MediaQuery query='(max-device-width:1224px)'>
-      <FooterMobile />
-    </MediaQuery>
-    </Row>
 
-    <Row>
-        <BackTop />
-    </Row>
   </div>
 
   </div>
@@ -262,11 +243,11 @@ const MainPage = (props) => {
 //   return { props: {} };
 // };
 
-MainPage.getInitialProps = async function (ctx) {
+DetailPage.getInitialProps = async function (ctx) {
     console.log(ctx)
     console.log("result")
     console.log(ctx.query.id)
-    const res = await fetch('https://api.americanmuslimtoday.net/amt-news/api/v1/news/427de6c4-8842-441b-9906-9de112711510');
+    const res = await fetch(`https://api.americanmuslimtoday.net/amt-news/api/v1/news/${ctx.query.id}`);
     const data = await res.json();
     return {
         newsItem: data,
@@ -275,4 +256,4 @@ MainPage.getInitialProps = async function (ctx) {
     }
 }
 
-export default withRouter(MainPage);
+export default DetailPage;
