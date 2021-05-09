@@ -16,7 +16,7 @@ import './pc_news_details.scss';
 import CommonComments from '../components/pc_news_detail/commonComments';
 import CommonRecommand from '../components/pc_news_detail/commonRecommand';
 // import Footer from '@/components/culturePage/footer/footer.js';
-import FooterMobile from '../components/mobile/home/footer/footerMobile';
+// import FooterMobile from '../components/mobile/home/footer/footerMobile';
 import {
   FacebookShareButton,
   GooglePlusShareButton,
