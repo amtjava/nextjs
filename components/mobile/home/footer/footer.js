@@ -5,7 +5,7 @@ class Footer extends Component {
 
     render(){
         return (
-            <div className={style.footer}>
+            <div className={style.mobilefooter}>
                 <p>Copyright © AMT Inc. All rights reserved 2020.</p>
                 {/* <div className={style.FooterProtocol}>
                     <a href="javascript:;">'AMT Policy'</a>

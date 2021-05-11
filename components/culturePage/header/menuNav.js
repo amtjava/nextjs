@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import style from './menuNav.module.scss';
 import './nav_style.scss';
-
+import Image from 'next/image'
 import './index.scss';
 import { Col, Menu, Dropdown, Button, Input, Modal, Tabs, message  } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
@@ -423,14 +423,15 @@ class MenuNav extends Component {
 
 
         return (
-            <header className={style.headercontroller} style={headerShadow} >
+            <header className="headercontroller" style={headerShadow} >
               <div className="logo-content" style={{textAlign: 'center', marginBottom: '3px'}}>
-                <img className="logo-img" src={require('../../../assets/images/logo.png')} alt=""/>
+
+                <Image className="logo-img" src="/images/logo.png" alt="" width="400" height="94" />
               </div>
               {/* <div className="small-title" style={{marginBottom: '8px'}}>
                 <p style={{textAlign: 'center', color: 'white', fontFamily: 'Georgia,serif',fontStyle: 'italic', fontSize:"16px"}}>-Inspiring the Leaders of Tomorrow-</p>
               </div> */}
-                <div className={style.headerbox} style={{textAlign: 'center'}}>
+                <div className="headerbox" style={{textAlign: 'center'}}>
                     {/* <Col span={6} style={{}}>
                          <Link to={``}>
                         <div className={style.logo}>
@@ -439,7 +440,7 @@ class MenuNav extends Component {
                         </Link>
                     </Col> */}
 
-                    <Col className={style.dropdownModule} span={24}>
+                    <Col className="dropdownModule" span={24}>
 
 
                         {/* onClick={e => e.preventDefault() */}
@@ -461,7 +462,7 @@ class MenuNav extends Component {
                                   <Link to={`/opinion-page`} style={{fontSize:"17px",fontWeight: 500 , lineHeight:"20px", fontFamily: "TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif"}}> Opinion <DownOutlined style={{fontSize:'8px'}}/>  </Link>
                             </Button>
                         </Dropdown>  */}
-                        <Button size="middle" type="link"   className={style.dropdownBtn}>
+                        <Button size="middle" type="link"   className="dropdownBtn">
                               <a href={`/opinion-page`} style={{fontSize:"17px",fontWeight: 500 , lineHeight:"20px", fontFamily: "TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif"}}> Opinion <DownOutlined style={{fontSize:'8px'}}/>  </a>
                         </Button>
                     {/*   <Dropdown
@@ -479,7 +480,7 @@ class MenuNav extends Component {
                                   <Link to={`/other-page/legal`} style={{   fontSize: "17px", fontWeight: 500 , lineHeight:"20px", fontFamily: "TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif" }}> Legal <DownOutlined style={{fontSize:'8px'}}/> </Link>
                             </Button>
                         </Dropdown> */}
-                        <Button size="middle" type="link"  className={style.dropdownBtn} >
+                        <Button size="middle" type="link"  className="dropdownBtn" >
                             <a href={`/other-page/legal`} style={{   fontSize: "17px", fontWeight: 500 , lineHeight:"20px", fontFamily: "TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif" }}> Legal <DownOutlined style={{fontSize:'8px'}}/> </a>
                         </Button>
 
@@ -499,7 +500,7 @@ class MenuNav extends Component {
 
                             </Button>
                         </Dropdown> */}
-                        <Button size="middle" type="link"  className={style.dropdownBtn} >
+                        <Button size="middle" type="link"  className="dropdownBtn" >
                               <a href={`/other-page/health`} style={{fontSize:"17px",fontWeight: 500, lineHeight:"20px", fontFamily: "TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif"}}> Health <DownOutlined style={{fontSize:'8px'}}/>  </a>
 
                         </Button>
@@ -520,7 +521,7 @@ class MenuNav extends Component {
                             </Button>
 
                         </Dropdown> */}
-                        <Button size="middle" type="link" className={style.dropdownBtn}  >
+                        <Button size="middle" type="link" className="dropdownBtn"  >
                                <a href={`/other-page/faith`} style={{fontSize:"17px",fontWeight: 500, lineHeight:"20px", fontFamily: "TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif"}} > Faith <DownOutlined style={{fontSize:'8px'}}/>  </a>
                         </Button>
                 {/*          <Dropdown
@@ -540,7 +541,7 @@ class MenuNav extends Component {
                             </Button>
 
                         </Dropdown> */}
-                        <Button size="middle" type="link" className={style.dropdownBtn}>
+                        <Button size="middle" type="link" className="dropdownBtn">
                                <a href={`/other-page/women`} style={{fontSize:"17px",fontWeight: 500, lineHeight:"20px", fontFamily: "TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif"}} > Women <DownOutlined style={{fontSize:'8px'}}/>  </a>
                         </Button>
                       {/*      <Dropdown
@@ -558,11 +559,11 @@ class MenuNav extends Component {
                                      <Link to={`/other-page/youth`} style={{fontSize:"17px",fontWeight: 500, lineHeight:"20px", fontFamily: "TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif"}}> Youth <DownOutlined style={{fontSize:'8px'}}/>  </Link>
                               </Button>
                         </Dropdown> */}
-                        <Button size="middle" type="link"  className={style.dropdownBtn} >
+                        <Button size="middle" type="link"  className="dropdownBtn" >
                               <a href to={`/other-page/youth`} style={{fontSize:"17px",fontWeight: 500, lineHeight:"20px", fontFamily: "TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif"}}> Youth <DownOutlined style={{fontSize:'8px'}}/>  </a>
                         </Button>
                         <Dropdown
-                              className={style.dropdownBtn}
+                              className="dropdownBtn"
                               overlay={(
                                     // 菜单
                                 <Menu style={{ width: 185}} >
@@ -578,7 +579,7 @@ class MenuNav extends Component {
                         </Dropdown>
 
                         <Dropdown
-                              className={style.dropdownBtn}
+                              className="dropdownBtn"
                               overlay={(
                                     // 菜单
                                 <Menu style={{ width: 160 }} >
@@ -609,13 +610,13 @@ class MenuNav extends Component {
                             </Button>
                         </Dropdown>
                         */}
-                        <Button size="middle" type="link"  className={style.dropdownBtn}  >
+                        <Button size="middle" type="link"  className="dropdownBtn"  >
                             <a href={`/donate`} style={{fontSize:"17px",fontWeight: 500, lineHeight:"20px", fontFamily: "TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif"}}> Donate <DownOutlined style={{fontSize:'8px'}}/> </a>
                         </Button>
-                        <Button size="middle" type="link"  className={style.dropdownBtn} >
+                        <Button size="middle" type="link"  className="dropdownBtn" >
                             <a href={`/classifiedhome`} style={{fontSize:"17px",fontWeight: 500, lineHeight:"20px", fontFamily: "TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif"}}> Classified <DownOutlined style={{fontSize:'8px'}}/> </a>
                         </Button>
-                        <Button size="middle" type="link"  className={style.dropdownBtn}  >
+                        <Button size="middle" type="link"  className="dropdownBtn"  >
                             <a href={`/searchpage`} style={{display:"flex",alignItems:"center",fontSize:"17px",fontWeight: 500, lineHeight:"20px", fontFamily: "TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif"}}>
                               <Icon type="search" />
                               <DownOutlined style={{fontSize:'8px'}}/> </a>

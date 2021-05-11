@@ -15,8 +15,8 @@ import './home.scss';
 import './pc_news_details.scss';
 import CommonComments from '../components/pc_news_detail/commonComments';
 import CommonRecommand from '../components/pc_news_detail/commonRecommand';
-// import Footer from '@/components/culturePage/footer/footer.js';
-// import FooterMobile from '../components/mobile/home/footer/footerMobile';
+import Footer from '../components/culturePage/footer/footer.js';
+import FooterMobile from '../components/mobile/home/footer/footerMobile';
 import {
   FacebookShareButton,
   GooglePlusShareButton,
@@ -59,9 +59,16 @@ const DetailPage = (props) => {
 
   } = props
 
-  const isTabletOrDesktop = useMediaQuery({ minWidth: 768 });
-
+  // const isTabletOrDesktop = useMediaQuery({ minWidth: 768 });
   const device = React.useContext(Context);
+
+  const isDesktopOrLaptop = useMediaQuery({
+  query: '(min-device-width: 1224px)'
+  })
+  const isTabletOrMobileDevice = useMediaQuery({
+    query: '(max-device-width: 1224px)'
+  })
+
   console.log(props.newsItem.headline);
   const router = useRouter();
   const { id } = router.query;
@@ -80,8 +87,17 @@ const DetailPage = (props) => {
      <title>{props.newsItem.headline}</title>
      <meta property="og:image" content={props.newsItem.bannerImage}/>
   </Head>
+  {isDesktopOrLaptop && <>
+    <MenuNav></MenuNav>
+  </>}
+
+  {isTabletOrMobileDevice &&
+          <Header></Header>
+   }
+
 
   <div className="detail-page-wrapper" >
+
 
 
     <Row>
@@ -225,6 +241,21 @@ const DetailPage = (props) => {
       </Col>
       <Col xs={0} sm={0} md={0} lg={0} xl={1} xxl={1}>  </Col>
 
+    </Row>
+
+    <Row>
+     {isDesktopOrLaptop && <>
+         <Footer></Footer>
+     </>}
+
+     {isTabletOrMobileDevice &&
+             <FooterMobile></FooterMobile>
+      }
+    </Row>
+
+
+    <Row>
+      <BackTop />
     </Row>
 
 
