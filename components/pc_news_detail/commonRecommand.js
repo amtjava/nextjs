@@ -4,7 +4,7 @@ import $ from 'jquery';
 import "animate.css";
 import { Router, Route, Link, browserHistory } from 'react-router-dom';
 import Carousel from 'nuka-carousel';
-import img from "../../assets/images/one.jpg"
+// import img from "../../assets/images/one.jpg"
 
 class CommonRecommand extends Component {
   constructor() {
@@ -105,10 +105,10 @@ fetch("https://api.americanmuslimtoday.net/amt-news/api/v1/news/" + this.props.n
 		wrapAround:true
 	};
       		const {news} = this.state;
-        let imgUrl = img;
-        const  showImage = {
-            backgroundImage: 'url(' + imgUrl + ')'
-        }
+        // let imgUrl = img;
+        // const  showImage = {
+        //     backgroundImage: 'url(' + imgUrl + ')'
+        // }
 
         const newsList = news.length
     ? news.map((newsItem, index) => (
