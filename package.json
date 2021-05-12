@@ -39,6 +39,6 @@
   ],
   "description": "A \"Hello World\" application with multiple pages that shows how Next.js routing works.",
   "devDependencies": {
-    "webpack": "^5.37.0"
+    "webpack": "^4.20.2"
   }
 }
