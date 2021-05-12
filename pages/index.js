@@ -46,7 +46,7 @@ MainPage.getInitialProps = async function () {
     const data = await res.json();
     return {
         shows: data,
-      //  id: ctx.query,
+    
     }
 }
 
