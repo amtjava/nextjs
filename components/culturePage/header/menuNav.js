@@ -426,7 +426,11 @@ class MenuNav extends Component {
             <header className="headercontroller" style={headerShadow} >
               <div className="logo-content" style={{textAlign: 'center', marginBottom: '3px'}}>
 
-                <Image className="logo-img" src="/images/logo.png" alt="" width="400" height="94" />
+                < img className = "logo-img"
+                src = "https://amt-news.s3.us-east-2.amazonaws.com/dev/media/news/banner_image/TVRZeU1USXlNalF6TmpjMU1BPT0=..png"
+                alt = ""
+                width = "400"
+                height = "94" / >
               </div>
               {/* <div className="small-title" style={{marginBottom: '8px'}}>
                 <p style={{textAlign: 'center', color: 'white', fontFamily: 'Georgia,serif',fontStyle: 'italic', fontSize:"16px"}}>-Inspiring the Leaders of Tomorrow-</p>

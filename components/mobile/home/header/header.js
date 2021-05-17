@@ -82,7 +82,10 @@ class Header extends Component {
                 <div className="logo">
                   <a href={`/`}>
 
-                    <Image src="/images/logo.png" alt="" width="262" height="61" />
+                    < img src = "https://amt-news.s3.us-east-2.amazonaws.com/dev/media/news/banner_image/TVRZeU1USXlNalF6TmpjMU1BPT0=..png"
+                    alt = ""
+                    width = "262"
+                    height = "61" / >
 
                   {/* <img src={require('assets/images/mobilelogo.png')}/> */}
                    </a>
