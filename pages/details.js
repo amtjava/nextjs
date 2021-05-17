@@ -79,7 +79,7 @@ const DetailPage = (props) => {
 
   const text = newsItem == undefined?"":newsItem.description;
 
-  const url = 'http://americanmuslimtoday.net:3000/details/'+ id;
+  const url = 'https://americanmuslimtoday.com/details/'+ id;
 
   return (
   <div>
