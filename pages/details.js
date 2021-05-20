@@ -84,21 +84,33 @@ const DetailPage = (props) => {
   return (
   <div>
   <Head>
+
+     <html lang="en" />
      <title>{props.newsItem.headline}</title>
      <meta property="og:image" content={props.newsItem.bannerImage}/>
+
+     <meta name="description" content={props.newsItem.description}></meta>
+
+     <meta name="keywords" content="American Muslim, Muslim News, Islam, Muslim, Muslim Social Media, Ahwal, Da'wa, Hajj, Izzat, Madrasa, Ramadan, Shari'a, Watan, Zakat" />
+
+     <link rel="shortcut icon" href="https://amt-news.s3.us-east-2.amazonaws.com/dev/media/news/banner_image/TVRZeU1UVTBPVFV6TWprM01nPT0=..png"/>
+
   </Head>
   {isDesktopOrLaptop && <>
     <MenuNav></MenuNav>
   </>}
 
-  {isTabletOrMobileDevice &&
-          <Header></Header>
-   }
+      <Row>
+      {isTabletOrMobileDevice &&
+              <Header></Header>
+       }
+
+       </Row>
+
+
 
 
   <div className="detail-page-wrapper" >
-
-
 
     <Row>
       <Col xs={0} sm={0} md={0} lg={0} xl={2} xxl={2}> </Col>
