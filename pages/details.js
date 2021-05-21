@@ -86,7 +86,7 @@ const DetailPage = (props) => {
   <Head>
      <html lang="en" />
      <title>{props.newsItem.headline}</title>
-     <link rel="shortcut icon" href="%PUBLIC_URL%/weblogo.png" />
+     <link rel="shortcut icon" href="../weblogo.png" />
      <meta name="description" content={props.newsItem.description}></meta>
      <meta name="keywords" content="American Muslim, Muslim News, Islam, Muslim, Muslim Social Media, Ahwal, Da'wa, Hajj, Izzat, Madrasa, Ramadan, Shari'a, Watan, Zakat" />
      <meta property="og:image" content={props.newsItem.bannerImage}/>
