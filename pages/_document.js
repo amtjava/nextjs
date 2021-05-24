@@ -1,7 +1,7 @@
 import Document from "next/document";
 import uaParser from "ua-parser-js";
 import { Context as ResponsiveContext } from "react-responsive";
-
+import { Html, Head, Main, NextScript } from 'next/document';
 const withResponsiveContext = (App, req) => {
   const contextValue = (() => {
     if (!req) {
@@ -36,6 +36,24 @@ class MyDocument extends Document {
 
     return await Document.getInitialProps(ctx);
   }
+
+  render() {
+    return (
+      <Html>
+        <Head>
+          {/* <link rel="shortcut icon" href={favicon} /> */}
+          <link rel="shortcut icon" href="http://127.0.0.1:3000/images/weblogo.png"/>
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
+
+
+
 }
 
 export default MyDocument;
