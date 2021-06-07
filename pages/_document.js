@@ -42,7 +42,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           {/* <link rel="shortcut icon" href={favicon} /> */}
-          <link rel="shortcut icon" href="http://127.0.0.1:3000/images/weblogo.png"/>
+          <link rel="shortcut icon" href="http://americanmuslimtoday.net:3000/images/weblogo.png"/>
         </Head>
         <body>
           <Main />
