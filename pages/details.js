@@ -87,8 +87,9 @@ const DetailPage = (props) => {
      <html lang="en" />
      <title>{props.newsItem.headline}</title>
      <meta name="description" content={props.newsItem.description}></meta>
-     <meta name="keywords" content="American Muslim, Muslim News, Islam, Muslim, Muslim Social Media, Ahwal, Da'wa, Hajj, Izzat, Madrasa, Ramadan, Shari'a, Watan, Zakat" />
+     <meta name="keywords" content={props.newsItem.keyWord} />
      <meta property="og:image" content={props.newsItem.bannerImage}/>
+     <meta data-rh="true" property="article:tag" content={props.newsItem.keyWord}/>
   </Head>
   {isDesktopOrLaptop && <>
     <MenuNav></MenuNav>
