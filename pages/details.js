@@ -124,6 +124,7 @@ const DetailPage = (props) => {
             <div className="article-description">
 
               <p>{text}</p>
+              <p style={{fontWeight: "900"}}> KeyWord: {props.newsItem.keyWord} </p>
 
             </div>
 
