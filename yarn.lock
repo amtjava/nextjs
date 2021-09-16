@@ -1413,7 +1413,7 @@ create-hmac@^1.1.0, create-hmac@^1.1.4, create-hmac@^1.1.7:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-create-react-class@^15.5.3, create-react-class@^15.6.0:
+create-react-class@^15.5.2, create-react-class@^15.5.3, create-react-class@^15.6.0:
   version "15.7.0"
   resolved "https://registry.yarnpkg.com/create-react-class/-/create-react-class-15.7.0.tgz#7499d7ca2e69bb51d13faf59bd04f0c65a1d6c1e"
   integrity sha512-QZv4sFWG9S5RUvkTYWbflxeZX+JG7Cz0Tn33rQBJ+WFQTqTfUTjMjiv9tnfXazjsO5r0KhPs+AqCjyrQX6h2ng==
@@ -2130,6 +2130,11 @@ fresh@~0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
   integrity sha1-PYyt2Q2XZWn6g1qx+OSyOhBWBac=
+
+froala-editor@4.0.4:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/froala-editor/-/froala-editor-4.0.4.tgz#71c87d36da3e05fd4e744af244bc00c23fb270e5"
+  integrity sha512-0g+ZRh4bDNC3ORevmXoui/+/eMqy2oBvbYn5KAwEyKH/JEGWsvg7MYrLdEjKhdFq8h93nEbmeMrcqsB2Y6Q9kw==
 
 froala-editor@^3.2.6-1:
   version "3.2.6-1"
@@ -4818,6 +4823,14 @@ react-dom@^17.0.2:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     scheduler "^0.20.2"
+
+react-froala-wysiwyg@^4.0.4:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/react-froala-wysiwyg/-/react-froala-wysiwyg-4.0.4.tgz#a61e041c11b3d631be45454d4a3d198bbfbf2346"
+  integrity sha512-/naxIZSG7CgdCS0uC9Y4R6DINGxolrRAMG30IahIAey5aymSIhTPIkWl8Jb7mjBXA8Q5Ey9BzFAKi8zUmTE+Gw==
+  dependencies:
+    create-react-class "^15.5.2"
+    froala-editor "4.0.4"
 
 react-is@16.13.1, react-is@^16.12.0, react-is@^16.13.1, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"

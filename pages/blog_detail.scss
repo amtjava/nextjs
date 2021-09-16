@@ -1,0 +1,144 @@
+.blog-detail{
+  .blog-row {
+    padding-top: 190px;
+
+
+  .blog-content{
+
+
+
+     .blog-wrapper{
+       padding-right: 40px;
+
+       .blog-list{
+        background: white;
+        border: 1px solid #ddd;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 27px;
+        padding-bottom: 16px;
+        border-radius: 5px;
+        word-break: break-all;
+        overflow: hidden;
+        margin-top: 19px;
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+        .flex-content{
+          display: flex;
+          flex-direction: column;
+          flex: 1 1 0%;
+
+          .title{
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            word-break: break-all;
+            font-size: 20px;
+            font-weight: 600;
+            color: #424242;
+
+
+          }
+          .description{
+            margin-top: 8px;
+            font-size: 14px;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            // -webkit-box-orient: vertical;
+            // overflow: hidden;
+            // -webkit-line-clamp: 4;
+          }
+          .bottom-info{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8px;
+            word-break: break-all;
+            font-size: 13px;
+            color: rgba(0, 0, 0, .85);
+            font-variant: tabular-nums;
+            .bottom-left{
+              align-items: center;
+              display: flex;
+              .author{
+                margin-left: 10px;
+              }
+              .time{
+                margin-left: 9px;
+              }
+            }
+            .bottom-right{
+              align-items: center;
+              display: flex;
+            }
+          }
+
+
+        }
+
+      }
+     }
+
+     .reply-number{
+       font-size: 20px;
+       font-weight: 500;
+       margin-top: 20px;
+     }
+
+     .reply-lists{
+       margin-top: -20px;
+    padding-right: 40px;
+       .reply-block{
+         border: 1px solid #ddd;
+         padding: 12px 12px;
+         display: flex;
+         margin-top: 20px;
+         img{
+           margin-right: 10px;
+         }
+         .words-wrapper{
+           display: flex;
+           flex: 1 1 0% !important;
+           flex-direction: column;
+           .name{
+             font-weight: 500 !important;
+             color: rgb(110, 110, 110);
+             display: block;
+             font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+             font-size: 18px;
+           }
+           .content{
+             margin-top: 8px;
+           }
+           .time{
+             margin-top: 9px;
+           }
+
+         }
+       }
+     }
+
+     .blog-comment{
+       padding-right: 40px;
+       margin-top: 80px;
+       .reply-number{
+          font-size: 20px;
+          font-weight: 500;
+          margin-top: 20px;
+          margin-bottom: 10px;
+      }
+
+
+     }
+
+
+
+
+
+  }
+
+  }
+}

@@ -14,6 +14,17 @@ app.prepare().then(() => {
   const server = new Koa()
   const router = new Router()
 
+  router.get('/blog-detail/:id', async ctx => {
+    const id = ctx.params.id
+    await handle(ctx.req, ctx.res, {
+      pathname: '/blog-detail',
+      query: {
+        id
+      },
+    })
+    ctx.respond = false
+  })
+
 
   router.get('/:id', async ctx => {
     const id = ctx.params.id
@@ -25,6 +36,8 @@ app.prepare().then(() => {
     })
     ctx.respond = false
   })
+
+
 
   server.use(router.routes());
 
