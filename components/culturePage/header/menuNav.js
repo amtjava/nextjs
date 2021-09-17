@@ -614,9 +614,6 @@ class MenuNav extends Component {
                             </Button>
                         </Dropdown>
                         */}
-                        <Button size="middle" type="link"  className={style.dropdownBtn}  >
-                            <Link to={`/blog`} style={{fontSize:"17px",fontWeight: 500, lineHeight:"20px", fontFamily: "TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif"}}> Blog <DownOutlined style={{fontSize:'8px'}}/> </Link>
-                      </Button>
                         <Button size="middle" type="link"  className="dropdownBtn"  >
                             <a href={`/donate`} style={{fontSize:"17px",fontWeight: 500, lineHeight:"20px", fontFamily: "TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif"}}> Donate <DownOutlined style={{fontSize:'8px'}}/> </a>
                         </Button>
