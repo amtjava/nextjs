@@ -4,6 +4,7 @@ import MenuNav from '../components/culturePage/header/menuNav';
 import './blog_detail.scss';
 import Footer from '../components/culturePage/footer/footer.js';
 import CommonRecommand from '../components/pc_news_detail/commonRecommand';
+import BlogComment from '../components/blog/BlogComment';
 import { Select } from 'antd';
 import { Router, Route, Link, browserHistory } from 'react-router-dom';
 import { FormOutlined } from '@ant-design/icons';
@@ -37,7 +38,7 @@ import {
   TumblrShareCount,
   VKShareCount
 } from "react-share";
-
+import axios from 'axios'
 import 'froala-editor/css/froala_style.min.css';
 import 'froala-editor/css/froala_editor.pkgd.min.css';
 const FormItem = Form.Item;
@@ -214,6 +215,9 @@ const BlogDetailPage = (props) => {
           </div>
 
 
+          <BlogComment blogId={id}/>
+
+
 
 
 
@@ -226,7 +230,9 @@ const BlogDetailPage = (props) => {
           <Col className="right-side" xs={0} sm={0} md={8} lg={8} xl={8}>
             <CommonRecommand newsId="61921f7b-d85f-40c7-a901-9d8d9eb1c10a"  flyDirection="fadeInUp" / >
           </Col>
+
         </Row>
+
 
         <Footer/>
 
