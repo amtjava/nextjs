@@ -143,8 +143,8 @@ const BlogDetailPage = (props) => {
           <div className="share_button" style={{marginRight: '2px' , display: "flex", marginTop:"30px"}}>
           <FacebookShareButton
             url={url}
-            quote={article.headline}
-            hashtag={article.headline}
+            quote={"Click here to blog with us"}
+            hashtag={"Click here to blog with us"}
           >
             <FacebookIcon size={32} round={true} />
             <FacebookShareCount url={url} />
@@ -153,14 +153,14 @@ const BlogDetailPage = (props) => {
 
           <TwitterShareButton
             url={url}
-            title={article.headline}
+            title={"Click here to blog with us"}
             children={<TwitterIcon size={32} round={true} />}
           />
 
           <LineShareButton
             url={url}
-            title={"title"}
-            summary={"summary"}
+            title={"Click here to blog with us"}
+            summary={"Click here to blog with us"}
             source={"source"}
           >
             <LineIcon size={32} round={true} />
@@ -168,7 +168,7 @@ const BlogDetailPage = (props) => {
 
           <WhatsappShareButton
             url={url}
-            title={article.headline}
+            title={"Click here to blog with us"}
           //  separator={newsItem.description}
           >
             <WhatsappIcon size={32} round={true} />
@@ -179,7 +179,7 @@ const BlogDetailPage = (props) => {
             //openShareDialogOnClick={true}
             //  onClick={e => e.preventDefault()}
             subject={article.headline}
-            body={`I found a very good article here in americanmuslimtoday ! ${article.headline}`}
+            body={`Click here to blog with us `}
           //  body={this.createMarkup()}
           >
             <EmailIcon size={32} round={true} />
@@ -200,7 +200,7 @@ const BlogDetailPage = (props) => {
           <RedditShareButton
             url={url}
 
-            title={article.headline}
+            title={"Click here to blog with us"}
           >
             <RedditIcon size={32} round={true} />
 
