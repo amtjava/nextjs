@@ -4,7 +4,7 @@ import MenuNav from '../components/culturePage/header/menuNav';
 import './blog_detail.scss';
 import Footer from '../components/culturePage/footer/footer.js';
 import CommonRecommand from '../components/pc_news_detail/commonRecommand';
-import BlogComment from '../components/blog/BlogComment';
+import BlogComment from '../components/blog/blogComment';
 import { Select } from 'antd';
 import { Router, Route, Link, browserHistory } from 'react-router-dom';
 import { FormOutlined } from '@ant-design/icons';
