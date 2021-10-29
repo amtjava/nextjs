@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import MediaQuery from 'react-responsive';
 import {Row, Col, message, Collapse, Input, Radio, Spin, Tooltip, Icon, BackTop, Button, Modal, Form, InputNumber, Checkbox, Pagination} from 'antd';
 import MenuNav from '../components/culturePage/header/menuNav';
+import Header from '../components/mobile/home/header/header';
 import './blog_detail.scss';
 import Footer from '../components/culturePage/footer/footer.js';
+import FooterMobile from '../components/mobile/home/footer/footerMobile';
 import CommonRecommand from '../components/pc_news_detail/commonRecommand';
 import BlogComment from '../components/blog/blogComment';
 import { Select } from 'antd';
@@ -93,7 +96,12 @@ const BlogDetailPage = (props) => {
            <meta data-rh="true" property="article:tag" content="AMT BLOG"/>
         </Head>
 
-        <MenuNav/>
+        <MediaQuery query='(min-device-width: 1224px)'>
+          <MenuNav/>
+        </MediaQuery>
+        <MediaQuery query='(max-device-width: 1224px)'>
+          <Header/>
+        </MediaQuery>
 
         <Row className="blog-row">
           <Col className="" xs={0} sm={0} md={3} lg={3} xl={3}>
@@ -233,8 +241,12 @@ const BlogDetailPage = (props) => {
 
         </Row>
 
-
-        <Footer/>
+        <MediaQuery query='(min-device-width: 1224px)'>
+          <Footer/>
+        </MediaQuery>
+        <MediaQuery query='(max-device-width: 1224px)'>
+          <FooterMobile/>
+        </MediaQuery>
 
 			</div>
 		);
