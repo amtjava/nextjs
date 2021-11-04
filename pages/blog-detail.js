@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import {Row, Col, message, Collapse, Input, Radio, Spin, Tooltip, Icon, BackTop, Button, Modal, Form, InputNumber, Checkbox, Pagination} from 'antd';
 import MenuNav from '../components/culturePage/header/menuNav';
 import './blog_detail.scss';
+import { useMediaQuery, Context, MediaQuery } from "react-responsive";
+import Header from '../components/mobile/home/header/header';
 import Footer from '../components/culturePage/footer/footer.js';
+import FooterMobile from '../components/mobile/home/footer/footerMobile';
 import CommonRecommand from '../components/pc_news_detail/commonRecommand';
 import BlogComment from '../components/blog/blogComment';
 import { Select } from 'antd';
@@ -67,6 +70,17 @@ const BlogDetailPage = (props) => {
       //   query: '(max-device-width: 1224px)'
       // })
 
+      // const isTabletOrDesktop = useMediaQuery({ minWidth: 768 });
+      const device = React.useContext(Context);
+
+      const isDesktopOrLaptop = useMediaQuery({
+      query: '(min-device-width: 1224px)'
+      })
+      const isTabletOrMobileDevice = useMediaQuery({
+        query: '(max-device-width: 1224px)'
+      })
+
+
       console.log(props.article);
     //  const router = useRouter();
     //  const { id } = router.query;
@@ -93,7 +107,17 @@ const BlogDetailPage = (props) => {
            <meta data-rh="true" property="article:tag" content="AMT BLOG"/>
         </Head>
 
-        <MenuNav/>
+{/*      <MenuNav/>   */}
+
+        <Row>
+        {isTabletOrMobileDevice &&
+                <Header></Header>
+         }
+         {isDesktopOrLaptop && <>
+           <MenuNav></MenuNav>
+         </>}
+
+         </Row>
 
         <Row className="blog-row">
           <Col className="" xs={0} sm={0} md={3} lg={3} xl={3}>
@@ -218,13 +242,6 @@ const BlogDetailPage = (props) => {
           <BlogComment blogId={id}/>
 
 
-
-
-
-
-
-
-
           </Col>
 
           <Col className="right-side" xs={0} sm={0} md={8} lg={8} xl={8}>
@@ -233,8 +250,14 @@ const BlogDetailPage = (props) => {
 
         </Row>
 
+        {isDesktopOrLaptop && <>
+            <Footer></Footer>
+        </>}
 
-        <Footer/>
+        {isTabletOrMobileDevice &&
+                <FooterMobile></FooterMobile>
+         }
+
 
 			</div>
 		);

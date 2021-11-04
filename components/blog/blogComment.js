@@ -167,7 +167,7 @@ class BlogComment extends Component {
           </strong>
           </div>
 
-          <Collapse defaultActiveKey={['1']} style={{marginRight: "40px"}}>
+          <Collapse defaultActiveKey={['1']}>
             <Panel header="Click to hide the reply" key="1">
               <div className="reply-lists">
                 {replyList}

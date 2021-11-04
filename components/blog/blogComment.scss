@@ -12,9 +12,21 @@
        margin-top: 20px;
      }
 
+     .ant-collapse{
+       margin-right: 40px;
+       @media screen and(max-width: 1224px) {
+           margin-right: 0px;
+
+       }
+     }
+
+
+
      .reply-lists{
        margin-top: -20px;
-    padding-right: 40px;
+       padding-right: 40px;
+
+
        .reply-block{
         // border: 1px solid #ddd;
          border: 5px solid rgb(224, 245, 239);
@@ -46,6 +58,7 @@
          }
        }
      }
+
 
      .blog-comment{
        padding-right: 40px;
