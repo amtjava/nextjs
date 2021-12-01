@@ -105,6 +105,16 @@ const BlogDetailPage = (props) => {
            <meta name="description" content={article.shortContent}></meta>
            <meta name="keywords" content="AMT BLOG" />
            <meta data-rh="true" property="article:tag" content="AMT BLOG"/>
+
+                 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-389547733"></script>
+                 <script>
+                   window.dataLayer = window.dataLayer || [];
+
+                   gtag('js', new Date());
+
+                   gtag('config', 'AW-389547733');
+                 </script>
+
         </Head>
 
 {/*      <MenuNav/>   */}

@@ -90,6 +90,17 @@ const DetailPage = (props) => {
      <meta name="keywords" content={props.newsItem.keyWord} />
      <meta property="og:image" content={props.newsItem.bannerImage}/>
      <meta data-rh="true" property="article:tag" content={props.newsItem.keyWord}/>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-389547733"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+
+        gtag('js', new Date());
+
+        gtag('config', 'AW-389547733');
+      </script>
+
+
   </Head>
   {isDesktopOrLaptop && <>
     <MenuNav></MenuNav>
@@ -124,7 +135,7 @@ const DetailPage = (props) => {
             <div className="article-description">
 
               <p>{text}</p>
-          
+
             </div>
 
             <div className="author-block">

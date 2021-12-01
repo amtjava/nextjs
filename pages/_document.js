@@ -41,6 +41,10 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+
+          <script async src="https://www.googletagmanager.com/gtag/js?id=AW-389547733"></script>
+
+
           {/* <link rel="shortcut icon" href={favicon} /> */}
           <link rel="shortcut icon" href="https://amt-news.s3.us-east-2.amazonaws.com/dev/media/news/banner_image/TVRZeU16QTVOemN6TVRrNE5nPT0=..png"/>
         </Head>
