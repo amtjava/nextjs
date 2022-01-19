@@ -222,7 +222,7 @@ const DetailPage = (props) => {
                   </div>
 
                   <div className="author-bottom">
-                    <time dateTime="2018-12-18T07:01:11.000Z" style={{ paddingRight: '10px' }}> {newsItem.updatedDate}</time>
+                    <time dateTime="2018-12-18T07:01:11.000Z" style={{ paddingRight: '10px' }}> {newsItem.createdDate}</time>
                     {newsItem.pdf
                       && <a href={newsItem.pdf} target="_blank" className="">
                         <Button type="primary" style={{ marginRight: '8px' }}>
